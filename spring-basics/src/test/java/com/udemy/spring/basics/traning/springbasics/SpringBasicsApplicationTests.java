@@ -1,4 +1,4 @@
-package com.udemy.spring.basics.springbasics;
+package com.udemy.spring.basics.traning.springbasics;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
