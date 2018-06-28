@@ -7,6 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBasicsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBasicsApplication.class, args);
+		SortAlgo sortAlgo = new QuickSortAlgo();
+		BinarySearchImpl binarySearch = new BinarySearchImpl(sortAlgo);
+		int result = binarySearch.binarySearch(new int[] {12,3,11,21}, 3);
+		System.out.println("result: "+result);
+		//SpringApplication.run(SpringBasicsApplication.class, args);
 	}
 }
