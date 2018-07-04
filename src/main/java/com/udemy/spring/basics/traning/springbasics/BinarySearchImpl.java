@@ -14,8 +14,9 @@ public class BinarySearchImpl {
 	}
 
 	public int binarySearch(int numberArr[], int number){
-		int index=number;
+		int index=number+10;
 		System.out.println("binary search");
+		System.out.println(sortAlgo);
 		int[] sortedArr = sortAlgo.sort(numberArr);
 		// search the array using sorted arr
 		return index;
