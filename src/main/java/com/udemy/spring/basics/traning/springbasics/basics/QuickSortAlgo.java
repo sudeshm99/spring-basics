@@ -1,4 +1,4 @@
-package com.udemy.spring.basics.traning.springbasics;
+package com.udemy.spring.basics.traning.springbasics.basics;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
