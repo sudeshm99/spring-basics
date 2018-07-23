@@ -10,22 +10,23 @@ import com.udemy.spring.basics.traning.springbasics.basics.*;
 import com.udemy.spring.basics.traning.springbasics.scope.PersonDAO;
 
 @SpringBootApplication
-public class CopyOfSpringBasicsApplicationScope {
+public class SpringBasicsApplicationScope {
 
-	private static Logger LOGGER = LoggerFactory.getLogger(CopyOfSpringBasicsApplicationScope.class);
+	private static Logger LOGGER = LoggerFactory.getLogger(SpringBasicsApplicationScope.class);
 	
 	public static void main(String[] args) {
 		
-		ApplicationContext applicationContext = SpringApplication.run(CopyOfSpringBasicsApplicationScope.class, args);
+		ApplicationContext applicationContext = SpringApplication.run(SpringBasicsApplicationScope.class, args);
 		PersonDAO personDAO1 = applicationContext.getBean(PersonDAO.class);
 		//System.out.println("-------------"+personDAO1);
 		PersonDAO personDAO2 = applicationContext.getBean(PersonDAO.class);
-
+		
+		System.out.println("---------------------------------------");
 		LOGGER.info("{}", personDAO1);
 		LOGGER.info("{}", personDAO1.getJdbcConnection());
 		LOGGER.info("{}", personDAO2);
 		LOGGER.info("{}", personDAO2.getJdbcConnection());
-		
+		System.out.println("---------------------------------------");
 		
 	}
 }

@@ -20,6 +20,6 @@ public class SpringBasicsApplicationBasics {
 		System.out.println("-----------"+binarySearchImpl2);
 		
 		int result = binarySearchImpl.binarySearch(new int[] {1,2,3,4}, 4);
-		System.out.println(result);
+//		System.out.println(result);
 	}
 }
