@@ -22,7 +22,7 @@ public class SpringBasicsApplicationAop implements CommandLineRunner{
 	private Logger LOGGER = LoggerFactory.getLogger(getClass());
 	
 	@Autowired
-	private Business1 business1;
+	private Business1 business1;	
 	
 	@Autowired
 	private Business2 business2;
